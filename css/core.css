@@ -1,0 +1,98 @@
+@import 'https://fonts.googleapis.com/css?family=Ubuntu';
+
+body {
+    width: 100%;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100%;
+}
+
+
+/* Selections [INICIO] */
+::selection {
+    color: #fff;
+    background-color: #333;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #333;
+}
+/* Selections [FIM] */
+
+
+/* Determina um tamanho de tela minimo para aplicar estilos [INICIO] */
+@media(min-width: 800px) {
+    table {
+        width: 100%; 
+    }
+}
+/* Determina um tamanho de tela minimo para aplicar estilos [FIM] */
+
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+
+/* Tabelas [INICIO] */
+.table-wrapper {
+    /*background-color: red;*/
+    overflow-x: auto;
+    margin: 50px 1% 50px;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 15px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.tr--blue:first-child {
+    background-color: #0040ff;
+    border-color: #001a66;
+}
+
+.tr--red:first-child {
+    background-color: #ff3333;
+    border-color: #990000;
+}
+
+tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    border-width: 1px 0 1px;
+    border-style: solid;
+    border-color: #d3d3d3;
+}
+
+tr:first-child {
+    border-width: 1px 0 1px;
+    border-style: solid;
+}
+
+tr:last-child {
+    border-bottom: 1px solid #d3d3d3;
+}
+
+th {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+td {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+th, td {
+    padding: 15px;
+}
+/* Tabelas [FIM] */

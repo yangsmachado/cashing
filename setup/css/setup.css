@@ -1,0 +1,256 @@
+@import 'https://fonts.googleapis.com/css?family=Prompt';
+
+body {
+    width: 100%;
+    margin: 0;
+    color: #333;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100%;
+    letter-spacing: 2px;
+}
+
+
+/* Selections [INICIO] */
+::selection {
+    color: #fff;
+    background-color: #333;
+}
+
+::-moz-selection {
+    color: #fff;
+    background-color: #333;
+}
+/* Selections [FIM] */
+
+
+h1, h3 {
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+
+
+/* Containers [INICIO] */
+.success {
+    width: 100%;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
+}
+
+section {
+    width: 100%;
+    min-height: 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
+}
+
+.section--error {
+    padding: 10px;
+    border: 1px solid #cc0000;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.container {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.container--main {
+    width: 600px;
+    padding: 30px 5% 30px;
+    margin: 0 auto 0 auto;
+}
+
+.container--error {
+    border: 1px solid #cc0000;
+}
+
+.container--field {
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin: 0 auto 20px auto;
+    float: left;
+}
+
+.container--field--error {
+    padding: 10px;
+    border: 1px solid #cc0000;
+}
+/* Containers [FIM] */
+
+
+@media (max-width: 601px) {
+    .container {
+        width: 100%;
+    }
+}
+
+form {
+    float: left;
+}
+
+
+/* Destaca textos [INICIO] */
+.destaque {
+    color: #990000;
+    font-style: italic;
+}
+/* Destaca textos [FIM] */
+
+
+/* Botoes [INICIO] */
+.button {
+    color: #fff;
+    background-color: #4285f4;
+    font-size: 1rem;
+    font-weight: 900;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #356cc6;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 15px 30px 15px;
+    margin: 10px 0 10px;
+    float: left;
+}
+
+.button:hover {
+    background-color: #356cc6;
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+/* Botoes [FIM] */
+
+
+/* Mensagem de Erro [INICIO] */
+.error {
+    width: 100%;
+    color: #fff;
+    background-color: #ff3030;
+    font-size: 1rem;
+    font-weight: 900;
+    border: 1px solid #cc0000;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
+}
+/* Mensagem de Erro [FIM] */
+
+
+/* Listas [INICIO] */
+.list, .list-item {
+    box-sizing: border-box;
+    float: left;
+}
+
+.list {
+    width: 100%;
+    font-size: 1.2rem;
+    list-style: none;
+    padding: 0;
+	margin: 15px 0 15px;
+}
+
+.list-item {
+    width: 100%;
+    color: #333;
+    padding: 10px;
+    text-align: left;
+}
+
+.list-item--success::before {
+    content: '\2714';
+    color: #66b24c;
+}
+
+.list-item--green {
+    color: #009933;
+}
+
+.list-item--red {
+    color: #ff3030;
+}
+
+.list-item--status-green:before {
+    content: '\2714';
+    color: #009933;
+    font-weight: 900;
+}
+
+.list-item--status-red:before {
+    content: '\2718';
+    color: #ff3030;
+    font-weight: 900;
+}
+/* Listas [FIM] */
+
+
+/* Campos [INICIO] */
+.field-text {
+    width: 100%;
+    color: #474747;
+    font-size: 1.2rem;
+    padding: 15px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    float: left;
+}
+
+.field-text:hover {
+    box-shadow: 0px 0px 1px 1px #d3d3d3;
+    -webkit-box-shadow: 0px 0px 1px 1px #d3d3d3;
+    -moz-box-shadow: 0px 0px 1px 1px #d3d3d3;
+}
+/* Campos [FIM] */
+
+
+/* Backgrounds [INICIO] */
+.background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    float: left;
+    display: none;
+}
+
+.background--normal {
+    z-index: 9;
+}
+
+.background--loading {
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url('../img/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: progress;
+    z-index: 10;
+}
+/* Backgrounds [FIM] */
